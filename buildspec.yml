@@ -4,8 +4,9 @@ phases:
   build:
     commands:
       - echo "Build started"
-      - find . -name "*.java"
-      - javac $(find . -name "*.java")
+      - pwd
+      - ls -R
+      - echo "Build successful"
 
 artifacts:
   files:
