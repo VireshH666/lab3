@@ -4,8 +4,8 @@ phases:
   build:
     commands:
       - echo "Build started"
-      - cd test
-      - mvn clean package
+      - find . -name "*.java"
+      - javac $(find . -name "*.java")
 
 artifacts:
   files:
